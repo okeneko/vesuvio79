@@ -5,8 +5,9 @@ import Layout from "../components/layout/layout"
 import Benvenuto from "../components/index/benvenuto"
 
 const IndexPage = () => {
-  const [wide, setWide] = useState(window.innerWidth > 1024)
+  const [wide, setWide] = useState(false)
   useEffect(() => {
+    resized()
     scrolled()
     window.addEventListener("resize", resized)
     document.addEventListener("scroll", scrolled)
