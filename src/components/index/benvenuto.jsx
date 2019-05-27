@@ -9,13 +9,11 @@ const Benvenuto = () => {
         className="hero-background is-transparent"
       />
       <div className="hero-body">
-        <div className="container has-text-centered">
-          <div className="title is-3-rem is-family-secondary has-text-golden has-text-weight-medium">
-            Ristorante
-            <br />
-            <span className="is-5-rem">Vesuvio'79</span>
-            <br />
-          </div>
+        <div className="title is-3-rem is-family-secondary has-text-golden has-text-weight-medium has-text-centered">
+          <span className="restaurant-title">
+            Ristorante <br />
+          </span>
+          <span className="restaurant-name is-5-rem">Vesuvio'79</span>
         </div>
       </div>
     </section>

@@ -1,5 +1,6 @@
 .benvenuto
   &.hero
+    // Background
     &.has-background
       position: relative
       overflow: hidden
@@ -11,3 +12,12 @@
       height: 100%
       &.is-transparent
         opacity: 0.3
+    
+    .hero-body
+      .title
+        padding: 1rem
+        position: absolute
+        width: 100%
+        top: 50% // changed by script
+        left: 50%
+        transform: translate(-50%,-50%)
