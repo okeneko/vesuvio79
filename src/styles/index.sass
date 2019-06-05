@@ -1,3 +1,28 @@
 .hero
-  &.hero-index
-    // margin-top: $navbar-height
+  // Background
+  &.has-background
+    position: relative
+    overflow: hidden
+  .hero-background
+    position: absolute!important
+    width: 100%
+    height: 100%
+    &.is-transparent
+      opacity: 0.35
+  
+  .hero-body
+    .column
+      display: flex
+      justify-content: center
+      align-items: center
+    .logo-ristorante
+      padding: 1rem
+      width: 100%
+      // position: absolute
+      // top: 50%
+      // left: 50%
+      // transform: translate(-50%,-50%)
+      // @media screen and (max-width: $tablet)
+      //   width: 80%
+      // @media screen and (min-width: $tablet)
+      //   width: 50%

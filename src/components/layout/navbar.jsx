@@ -1,17 +1,18 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React from "react"
 import { Link } from "gatsby"
+import logo from "../../images/logo-vesuvio.svg"
 
 const Navbar = () => {
   return (
     <nav
-      className="navbar is-spaced is-fixed-top is-dark has-text-golden"
+      className="navbar is-spaced is-fixed-top is-dark"
       role="navigation"
       aria-label="main navigation"
     >
       <div className="navbar-brand has-text-centered">
-        <Link className="logo is-family-secondary has-text-golden" to="/">
-          Vesuvio'79
+        <Link className="logo" to="/">
+          <img src={logo} alt="Vesuvio'79 logo" />
         </Link>
         <a
           role="button"
@@ -24,16 +25,12 @@ const Navbar = () => {
           <span aria-hidden="true" />
         </a>
       </div>
-      <div className="navbar-menu is-uppercase">
+      <div className="navbar-menu is-uppercase is-">
         <div className="navbar-start">
-          <a className="navbar-item">menù</a>
-          <a className="navbar-item">menù</a>
-          <a className="navbar-item">menù</a>
+          <a className="navbar-item">il menù</a>
         </div>
         <div className="navbar-end">
-          <a className="navbar-item">menù</a>
-          <a className="navbar-item">menù</a>
-          <a className="navbar-item">menù</a>
+          <a className="navbar-item">la nostra filosofia</a>
         </div>
       </div>
     </nav>
