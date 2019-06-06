@@ -51,7 +51,7 @@ export const query = graphql`
     img: file(relativePath: { eq: "pasta.jpg" }) {
       childImageSharp {
         fluid {
-          ...GatsbyImageSharpFluid_tracedSVG
+          ...GatsbyImageSharpFluid
         }
       }
     }
