@@ -26,19 +26,17 @@ const IndexPage = ({ data }) => {
         <div className="hero-body">
           <div className="container">
             <div className="columns is-gapless">
-              <div className="column">
+              <div className="column is-half">
                 <img
                   src={logo}
                   className="logo-ristorante"
                   alt="Ristorante Vesuvio'79 logo"
                 />
               </div>
-              <div className="column">
-                <div className="container has-text-centered">
-                  <h1 className="title">
-                    Ciao raga e benvenuti al Ristorante Vesuvio'79 :)
-                  </h1>
-                </div>
+              <div className="column is-half">
+                <h1 className="title has-text-centered">
+                  Ciao raga e benvenuti al Ristorante Vesuvio'79 :)
+                </h1>
               </div>
             </div>
           </div>

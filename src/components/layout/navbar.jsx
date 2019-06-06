@@ -6,7 +6,7 @@ import logo from "../../images/logo-vesuvio.svg"
 const Navbar = () => {
   return (
     <nav
-      className="navbar is-spaced is-fixed-top is-dark"
+      className="navbar is-spaced is-dark"
       role="navigation"
       aria-label="main navigation"
     >

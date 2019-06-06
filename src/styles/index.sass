@@ -1,4 +1,8 @@
-.hero
+.hero-index
+  @media screen and (max-width: $desktop)
+    margin-top: -4rem
+  @media screen and (min-width: $desktop)
+    margin-top: -5.25rem
   // Background
   &.has-background
     position: relative
@@ -8,13 +12,18 @@
     width: 100%
     height: 100%
     &.is-transparent
-      opacity: 0.35
+      opacity: 0.2
   
   .hero-body
+    .container
+      min-height: calc(100vh - 6rem)
+      display: flex
     .column
       display: flex
       justify-content: center
       align-items: center
+      @media screen and (max-width: $tablet)
+        min-height: 50%
     .logo-ristorante
       padding: 1rem
       width: 100%
