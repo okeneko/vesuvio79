@@ -5,9 +5,9 @@ import Navbar from "./navbar"
 
 import "../../styles/main.sass"
 
-const Layout = ({ children }) => (
+const Layout = ({ children, noLogo, transparent }) => (
   <>
-    <Navbar />
+    <Navbar noLogo={!!noLogo} transparent={!!transparent} />
     <div>{children}</div>
   </>
 )

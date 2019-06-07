@@ -1,4 +1,5 @@
 import React from "react"
+import { Link } from "gatsby"
 import { graphql } from "gatsby"
 import Img from "gatsby-image"
 
@@ -8,7 +9,7 @@ import logo from "../images/logo-ristorante.svg"
 
 const IndexPage = ({ data }) => {
   return (
-    <Layout>
+    <Layout noLogo transparent>
       <SEO title="Home" />
       <section className="hero hero-index is-dark is-fullheight has-background">
         {/* <img
@@ -25,7 +26,7 @@ const IndexPage = ({ data }) => {
 
         <div className="hero-body">
           <div className="container">
-            <div className="columns is-gapless">
+            <div className="columns">
               <div className="column is-half">
                 <img
                   src={logo}
@@ -34,9 +35,19 @@ const IndexPage = ({ data }) => {
                 />
               </div>
               <div className="column is-half">
-                <h1 className="title has-text-centered">
-                  Ciao raga e benvenuti al Ristorante Vesuvio'79 :)
-                </h1>
+                <div className="notification has-text-golden is-dark description">
+                  <p className="is-size-5 has-text-weight-semibold description-text">
+                    La città di Pompei fu distrutta dall'eruzione del Vesuvio
+                    nel 79 d.C. In questo ristorante scoprirete una cucina
+                    ancora più esplosiva.
+                  </p>
+                  <Link
+                    to="/menu"
+                    className="button is-golden is-rounded is-medium has-text-weight-bold is-uppercase"
+                  >
+                    il nostro menù
+                  </Link>
+                </div>
               </div>
             </div>
           </div>
@@ -50,7 +61,7 @@ export const query = graphql`
   query {
     img: file(relativePath: { eq: "pasta.jpg" }) {
       childImageSharp {
-        fluid {
+        fluid(maxWidth: 1900) {
           ...GatsbyImageSharpFluid
         }
       }

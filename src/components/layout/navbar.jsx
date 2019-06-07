@@ -3,17 +3,21 @@ import React from "react"
 import { Link } from "gatsby"
 import logo from "../../images/logo-vesuvio.svg"
 
-const Navbar = () => {
+const Navbar = ({ noLogo, transparent }) => {
+  const transparentClass = !!transparent ? "navbar-transparent" : ""
+
   return (
     <nav
-      className="navbar is-spaced is-dark"
+      className={`navbar is-spaced is-dark ${transparentClass}`}
       role="navigation"
       aria-label="main navigation"
     >
       <div className="navbar-brand has-text-centered">
-        <Link className="logo" to="/">
-          <img src={logo} alt="Vesuvio'79 logo" />
-        </Link>
+        {!noLogo && (
+          <Link className="logo" to="/">
+            <img src={logo} alt="Vesuvio'79 logo" />
+          </Link>
+        )}
         <a
           role="button"
           className="navbar-burger has-text-golden"

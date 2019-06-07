@@ -1,7 +1,13 @@
 .navbar
-  background-color: rgba(#121212, 0) !important
+  &.navbar-transparent
+    background-color: rgba(#121212, 0) !important
   @media screen and (max-width: $desktop)
     height: 4rem
+  .navbar-start, .navbar-end
+    @media screen and (min-width: $navbar-breakpoint)
+      width: 50%
+      justify-content: center
+    
   .navbar-brand
     height: 100%
     .logo

@@ -12,7 +12,7 @@
     width: 100%
     height: 100%
     &.is-transparent
-      opacity: 0.2
+      opacity: 0.4
   
   .hero-body
     .container
@@ -27,11 +27,12 @@
     .logo-ristorante
       padding: 1rem
       width: 100%
-      // position: absolute
-      // top: 50%
-      // left: 50%
-      // transform: translate(-50%,-50%)
-      // @media screen and (max-width: $tablet)
-      //   width: 80%
-      // @media screen and (min-width: $tablet)
-      //   width: 50%
+    .description
+      display: flex
+      flex-direction: column
+      justify-content: center
+      align-items: center
+      background-color: rgba($dark, 0.6)
+      border-radius: 10px
+      .description-text
+        margin-bottom: 1.25rem
