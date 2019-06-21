@@ -2,7 +2,7 @@ module.exports = {
   siteMetadata: {
     title: `Ristorante Vesuvio'79`,
     description: `[slogan]`,
-    author: `okeneko`,
+    author: `Eneko`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,

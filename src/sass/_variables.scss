@@ -1,0 +1,14 @@
+$color-primary-light: #e6be58;
+$color-primary: #daa520;
+$color-primary-dark: #9f7817;
+
+$color-dark: #121212;
+$color-light: #ededed;
+
+$font-primary: Montserrat, sans-serif;
+$font-title: "Rock Salt", sans-serif;
+
+$full-padding: 3rem;
+$grid-section-row-gap: 3rem;
+$section-height: calc(100vh - (#{$full-padding} + #{$grid-section-row-gap}));
+$section-width: calc(100vh - (2 * #{full-padding}));
