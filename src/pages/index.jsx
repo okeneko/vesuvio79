@@ -14,7 +14,7 @@ const IndexPage = ({ data }) => {
       <div className="index">
         <Header />
         <Gallery />
-        {/* <MenuSection /> */}
+        <MenuSection />
         {/* <Footer /> */}
       </div>
     </Layout>

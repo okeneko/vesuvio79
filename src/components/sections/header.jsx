@@ -17,6 +17,16 @@ const Header = ({ img }) => {
     }
   `)
 
+  const scroll = () => {
+    const layout = document.querySelector(".layout")
+    const layoutPadding = window.getComputedStyle(layout).padding
+    window.scrollTo({
+      top: window.innerHeight - parseInt(layoutPadding),
+      left: 0,
+      behavior: "smooth",
+    })
+  }
+
   return (
     <section className="header">
       <Img
@@ -27,7 +37,7 @@ const Header = ({ img }) => {
         <span className="header__title--ristorante">Ristorante</span>
         <span className="header__title--vesuvio">Vesuvio'79</span>
       </h1>
-      <MdExpandMore className="header__expand-icon" />
+      <MdExpandMore className="header__expand-icon" onClick={scroll} />
     </section>
   )
 }

@@ -1,8 +1,8 @@
 .gallery {
   display: grid;
   grid-template-rows: repeat(4, 1fr);
-  grid-template-columns: repeat(8, 1fr);
-  gap: 3rem;
+  grid-template-columns: repeat(10, 1fr);
+  gap: 1.5rem;
   &__photo {
     &--1 {
       grid-area: 1 / 1 / span 4 / span 2;
@@ -17,25 +17,52 @@
       grid-area: 1 / 7 / span 4 / span 2;
     }
     &--5 {
-      grid-area: 3 / 3 / span 2 / span 1;
-    }
-    &--6 {
-      grid-area: 3 / 4 / span 2 / span 3;
+      grid-area: 3 / 3 / span 2 / span 4;
     }
   }
 
   &__text {
-    grid-area: 2 / 5 / span 2 / span 3;
+    grid-area: 1 / -4 / -1 / span 3;
+    align-self: center;
     z-index: 3;
-    background-color: rgba($color-dark, 0.75);
-    padding: 3rem;
-
-    color: $color-light;
-    font-size: 3.5rem;
+    background-color: $color-primary;
+    padding: 4rem;
+    box-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.5);
+    color: $color-dark;
+    font-size: 3rem;
     font-weight: 700;
 
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    display: grid;
+    grid-template-rows: 4fr 1fr;
+    row-gap: 2rem;
+  }
+
+  &__button {
+    cursor: pointer;
+    border: none;
+    background-color: $color-dark;
+    color: $color-primary;
+    font-family: inherit;
+    text-transform: uppercase;
+    font-size: 1.75rem;
+    font-weight: 700;
+    border: 3px solid $color-dark;
+    transition: all 0.1s;
+
+    &:hover {
+      color: $color-dark;
+      background-color: $color-primary;
+      transform: translateY(-2px);
+      box-shadow: 0 1.5rem 1rem rgba($color-dark, 0.1);
+    }
+
+    &:active {
+      transform: translateY(0);
+      box-shadow: 0 0.5rem 1rem rgba($color-dark, 0.1);
+    }
+
+    &:focus {
+      outline: none;
+    }
   }
 }
