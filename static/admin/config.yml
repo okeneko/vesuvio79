@@ -1,0 +1,64 @@
+backend:
+  name: github
+  repo: okeneko/vesuvio79
+
+media_folder: static/assets
+public_folder: assets
+site_url: https://vesuvio79.netlify.com
+# logo_url: https://vesuvio79.netlify.com/icons/icon-256x256.png
+
+collections:
+  - label: "Menù"
+    name: "menu"
+    format: "json"
+    files:
+      - label: "Le paste"
+        name: "paste"
+        file: "src/content/paste.json"
+        fields:
+          - label: "Piatti"
+            name: "piatti"
+            widget: "list"
+            fields:
+              - label: "Nome"
+                name: "nome"
+                widget: "string"
+              - label: "Prezzo"
+                name: "prezzo"
+                widget: "number"
+                valueType: "float"
+                min: 0
+
+      - label: "Le pizze"
+        name: "pizze"
+        file: "src/content/pizze.json"
+        fields:
+          - label: "Piatti"
+            name: "piatti"
+            widget: "list"
+            fields:
+              - label: "Nome"
+                name: "nome"
+                widget: "string"
+              - label: "Prezzo"
+                name: "prezzo"
+                widget: "number"
+                valueType: "float"
+                min: 0
+
+      - label: "I risotti"
+        name: "risotti"
+        file: "src/content/risotti.json"
+        fields:
+          - label: "Piatti"
+            name: "piatti"
+            widget: "list"
+            fields:
+              - label: "Nome"
+                name: "nome"
+                widget: "string"
+              - label: "Prezzo"
+                name: "prezzo"
+                widget: "number"
+                valueType: "float"
+                min: 0
