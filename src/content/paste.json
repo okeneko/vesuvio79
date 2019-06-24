@@ -1,8 +1,16 @@
 {
   "piatti": [
     {
-      "nome": "Macarrones con tomatico",
-      "prezzo": 9.99
+      "nome": "Piatto di pasta 1",
+      "prezzo": 10
+    },
+    {
+      "nome": "Piato di pasta 2",
+      "prezzo": 12
+    },
+    {
+      "nome": "Piato di pasta 3",
+      "prezzo": 14
     }
   ]
 }
