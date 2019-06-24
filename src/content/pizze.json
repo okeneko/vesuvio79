@@ -1,0 +1,16 @@
+{
+  "piatti": [
+    {
+      "nome": "Pizza numero 1",
+      "prezzo": 20
+    },
+    {
+      "nome": "Pizza numero 2",
+      "prezzo": 20
+    },
+    {
+      "nome": "Pizza numero 3",
+      "prezzo": 234
+    }
+  ]
+}
