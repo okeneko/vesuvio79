@@ -12,12 +12,12 @@ collections:
     name: "menu"
     format: "json"
     files:
-      - label: "Le paste"
-        name: "paste"
-        file: "src/content/paste.json"
+      - label: "Il Menù"
+        name: "menu"
+        file: "src/content/menu.json"
         fields:
-          - label: "Piatti"
-            name: "piatti"
+          - label: "Paste"
+            name: "paste"
             widget: "list"
             fields:
               - label: "Nome"
@@ -28,13 +28,8 @@ collections:
                 widget: "number"
                 valueType: "float"
                 min: 0
-
-      - label: "Le pizze"
-        name: "pizze"
-        file: "src/content/pizze.json"
-        fields:
-          - label: "Piatti"
-            name: "piatti"
+          - label: "Pizze"
+            name: "pizze"
             widget: "list"
             fields:
               - label: "Nome"
@@ -45,13 +40,8 @@ collections:
                 widget: "number"
                 valueType: "float"
                 min: 0
-
-      - label: "I risotti"
-        name: "risotti"
-        file: "src/content/risotti.json"
-        fields:
-          - label: "Piatti"
-            name: "piatti"
+          - label: "Risotti"
+            name: "risotti"
             widget: "list"
             fields:
               - label: "Nome"

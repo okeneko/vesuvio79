@@ -1,0 +1,40 @@
+{
+  "paste": [
+    {
+      "nome": "Piatto di pasta 1",
+      "prezzo": 10
+    },
+    {
+      "nome": "Piato di pasta 2",
+      "prezzo": 12
+    },
+    {
+      "nome": "Piato di pasta 3",
+      "prezzo": 14
+    }
+  ],
+  "pizze": [
+    {
+      "nome": "Pizza numero 1",
+      "prezzo": 20
+    },
+    {
+      "nome": "Pizza numero 2",
+      "prezzo": 20
+    },
+    {
+      "nome": "Pizza numero 3",
+      "prezzo": 234
+    }
+  ],
+  "risotti": [
+    {
+      "nome": "1 risotto",
+      "prezzo": 10
+    },
+    {
+      "nome": "2 risotto",
+      "prezzo": 20
+    }
+  ]
+}
