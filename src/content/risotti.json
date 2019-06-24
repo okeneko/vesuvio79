@@ -1,0 +1,12 @@
+{
+  "piatti": [
+    {
+      "nome": "1 risotto",
+      "prezzo": 10
+    },
+    {
+      "nome": "2 risotto",
+      "prezzo": 20
+    }
+  ]
+}
