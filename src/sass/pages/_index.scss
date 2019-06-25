@@ -5,6 +5,6 @@
   display: grid;
   grid-template-rows:
     repeat(2, $section-height)
-    minmax($section-height, max-content) /*min-content*/;
-  row-gap: $grid-section-row-gap;
+    max-content /*min-content*/;
+  row-gap: $gap;
 }

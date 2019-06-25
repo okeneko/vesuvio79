@@ -4,6 +4,7 @@
   grid-template-columns: repeat(10, 1fr);
   gap: 1.5rem;
   &__photo {
+    opacity: 0.7;
     &--1 {
       grid-area: 1 / 1 / span 4 / span 2;
     }

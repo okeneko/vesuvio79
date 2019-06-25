@@ -2,9 +2,11 @@
 @import "./base";
 @import "./layout";
 
+@import "./components/piatto";
+
 @import "./sections/footer";
 @import "./sections/gallery";
 @import "./sections/header";
-@import "./sections/menu-section";
+@import "./sections/menu";
 
 @import "./pages/index";
