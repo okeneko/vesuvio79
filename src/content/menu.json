@@ -1,16 +1,24 @@
 {
   "paste": [
     {
-      "nome": "Piatto di pasta 1",
-      "prezzo": 10
+      "nome": "Spaghetti caccio e pepe",
+      "prezzo": 11
     },
     {
-      "nome": "Piatto di pasta 2",
-      "prezzo": 12
+      "nome": "Fettuccine alla carbonara",
+      "prezzo": 10.99
     },
     {
-      "nome": "Piatto di pasta 3",
-      "prezzo": 14
+      "nome": "Tagliatelle alla bolognese",
+      "prezzo": 10.99
+    },
+    {
+      "nome": "Penne rigate al pesto genovese",
+      "prezzo": 11.99
+    },
+    {
+      "nome": "Ravioli di carne ai funghi",
+      "prezzo": 12.99
     }
   ],
   "pizze": [
