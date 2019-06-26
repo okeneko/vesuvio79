@@ -17,22 +17,54 @@
       "prezzo": 11.99
     },
     {
+      "nome": "Rigatoni all'amatriciana",
+      "prezzo": 11.99
+    },
+    {
       "nome": "Ravioli di carne ai funghi",
       "prezzo": 12.99
     }
   ],
   "pizze": [
     {
-      "nome": "Pizza numero 1",
-      "prezzo": 20
+      "nome": "Margherita",
+      "prezzo": 9.99
     },
     {
-      "nome": "Pizza numero 2",
-      "prezzo": 20
+      "nome": "Prosciutto e funghi",
+      "prezzo": 10.99
     },
     {
-      "nome": "Pizza numero 3",
-      "prezzo": 234
+      "nome": "Melanzana",
+      "prezzo": 10.99
+    },
+    {
+      "nome": "Carbonara",
+      "prezzo": 11.99
+    },
+    {
+      "nome": "Quattro formaggi",
+      "prezzo": 11.99
+    },
+    {
+      "nome": "Caprese",
+      "prezzo": 11.99
+    },
+    {
+      "nome": "Al salame piccante",
+      "prezzo": 11.99
+    },
+    {
+      "nome": "Quattro stagioni",
+      "prezzo": 12.99
+    },
+    {
+      "nome": "Napoletana",
+      "prezzo": 12.99
+    },
+    {
+      "nome": "Calzone toscano",
+      "prezzo": 10.99
     }
   ],
   "risotti": [
