@@ -69,12 +69,28 @@
   ],
   "risotti": [
     {
-      "nome": "1 risotto",
-      "prezzo": 10
+      "nome": "Risotto ai quattro formaggi",
+      "prezzo": 10.99
     },
     {
-      "nome": "2 risotto",
-      "prezzo": 20
+      "nome": "Risotto al pomodoro",
+      "prezzo": 10.99
+    },
+    {
+      "nome": "Risotto ai funghi porcini",
+      "prezzo": 11.99
+    },
+    {
+      "nome": "Risotto ai frutti di mare",
+      "prezzo": 11.99
+    },
+    {
+      "nome": "Risotto mare e monti",
+      "prezzo": 13.99
+    },
+    {
+      "nome": "Risotto al nero di seppia con gamberi",
+      "prezzo": 13.99
     }
   ]
 }
