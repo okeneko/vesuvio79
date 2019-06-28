@@ -3,6 +3,7 @@
   grid-template-rows: repeat(4, 1fr);
   grid-template-columns: repeat(10, 1fr);
   gap: 1.5rem;
+
   &__photo {
     opacity: 0.7;
     &--1 {
@@ -20,6 +21,42 @@
     &--5 {
       grid-area: 3 / 3 / span 2 / span 4;
     }
+
+    @include res(900) {
+      &--1 {
+        display: none;
+      }
+      &--2 {
+        grid-area: 1 / 1 / span 2 / span 4;
+      }
+      &--3 {
+        grid-area: 1 / 5 / span 2 / span 4;
+      }
+      &--4 {
+        display: none;
+      }
+      &--5 {
+        grid-area: 3 / 1 / span 2 / span 8;
+      }
+    }
+
+    @include res(700) {
+      &--1 {
+        display: none;
+      }
+      &--2 {
+        grid-area: 1 / 1 / span 2 / span 5;
+      }
+      &--3 {
+        grid-area: 1 / 6 / span 2 / span 5;
+      }
+      &--4 {
+        display: none;
+      }
+      &--5 {
+        grid-area: 3 / 1 / -1 / -1;
+      }
+    }
   }
 
   &__text {
@@ -36,6 +73,23 @@
     display: grid;
     grid-template-rows: 4fr 1fr;
     row-gap: 2rem;
+
+    @include res(900) {
+      grid-area: 1 / -5 / -1 / span 4;
+    }
+
+    @include res(700) {
+      grid-template-rows: 4fr;
+      font-size: 2.5rem;
+      grid-area: 2 / 3 / -2 / -3;
+    }
+
+    @include res(600) {
+    }
+
+    @include res(400) {
+      font-size: 2rem;
+    }
   }
 
   &__button {
@@ -49,6 +103,10 @@
     font-weight: 700;
     border: 3px solid $color-dark;
     transition: all 0.1s;
+
+    @include res(700) {
+      display: none;
+    }
 
     &:hover {
       color: $color-dark;

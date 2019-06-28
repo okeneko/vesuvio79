@@ -3,12 +3,9 @@ import Img from "gatsby-image"
 
 const MenuType = ({ title, img, index }) => {
   const scroll = index => {
-    const layout = document.querySelector(".layout")
-    const layoutPadding = window.getComputedStyle(layout).padding
+    const padding = window.getComputedStyle(document.body).padding
     window.scrollTo({
-      top:
-        (3 + index) * window.innerHeight -
-        (3 + index) * parseInt(layoutPadding),
+      top: (3 + index) * window.innerHeight - (3 + index) * parseInt(padding),
       left: 0,
       behavior: "smooth",
     })

@@ -24,10 +24,9 @@ const Gallery = () => {
   `)
 
   const scroll = () => {
-    const layout = document.querySelector(".layout")
-    const layoutPadding = window.getComputedStyle(layout).padding
+    const padding = window.getComputedStyle(document.body).padding
     window.scrollTo({
-      top: 2 * window.innerHeight - 2 * parseInt(layoutPadding),
+      top: 2 * window.innerHeight - 2 * parseInt(padding),
       left: 0,
       behavior: "smooth",
     })

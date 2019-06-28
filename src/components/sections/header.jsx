@@ -18,10 +18,9 @@ const Header = ({ img }) => {
   `)
 
   const scroll = () => {
-    const layout = document.querySelector(".layout")
-    const layoutPadding = window.getComputedStyle(layout).padding
+    const padding = window.getComputedStyle(document.body).padding
     window.scrollTo({
-      top: window.innerHeight - parseInt(layoutPadding),
+      top: window.innerHeight - parseInt(padding),
       left: 0,
       behavior: "smooth",
     })

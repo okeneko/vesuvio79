@@ -2,16 +2,39 @@ $color-primary: #cc9933;
 $color-primary-dark: #b88a2e;
 $color-primary-light: #d1a347;
 
-// $color-primary-light: lighten($color-primary, 15%);
-// $color-primary-dark: darken($color-primary, 15%);
-// $color-primary-lighter: lighten($color-primary, 30%);
-// $color-primary-darker: darken($color-primary, 30%);
-
 $color-dark: #121212;
 $color-light: #ededed;
 
 $font-primary: Montserrat, sans-serif;
 $font-title: "Rock Salt", sans-serif;
 
+@mixin res($breakpoint) {
+  @if $breakpoint == 400 {
+    // 400px
+    @media only screen and (max-width: 25em) {
+      @content;
+    }
+  }
+  @if $breakpoint == 600 {
+    // 600px
+    @media only screen and (max-width: 37.5em) {
+      @content;
+    }
+  }
+  @if $breakpoint == 700 {
+    // 700px
+    @media only screen and (max-width: 43.75em) {
+      @content;
+    }
+  }
+  @if $breakpoint == 900 {
+    // 900px
+    @media only screen and (max-width: 56.25em) {
+      @content;
+    }
+  }
+}
+
 $gap: 3rem;
+
 $section-height: calc(100vh - (2 * #{$gap}));

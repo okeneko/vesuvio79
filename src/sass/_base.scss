@@ -11,9 +11,19 @@
 
 html {
   font-size: 62.5%; // 1rem = 10px
+
+  @include res(900) {
+    font-size: 56.25%; // 1rem = 9px
+  }
+
+  @include res(600) {
+    font-size: 50%; // 1rem = 8px
+  }
 }
 
 body {
+  background-color: $color-dark;
+  padding: $gap;
   font-family: Montserrat, sans-serif;
   font-weight: 500;
   font-size: 1.6rem;

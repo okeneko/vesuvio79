@@ -5,7 +5,7 @@ import Layout from "../components/layout/layout"
 import Header from "../components/sections/header"
 import Gallery from "../components/sections/gallery"
 import Menu from "../components/sections/menu"
-// import Footer from "../components/sections/footer"
+import Footer from "../components/sections/footer"
 
 const IndexPage = ({ data }) => {
   return (
@@ -15,7 +15,7 @@ const IndexPage = ({ data }) => {
         <Header />
         <Gallery />
         <Menu />
-        {/* <Footer /> */}
+        <Footer />
       </div>
     </Layout>
   )
